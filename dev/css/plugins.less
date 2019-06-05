@@ -1,0 +1,20 @@
+@pluginsPath: 'plugins';
+
+@import url('@{pluginsPath}/tingle.min.less');
+@import url('@{pluginsPath}/nice-select.less');
+@import url('@{pluginsPath}/simplebar.less');
+
+.simplebar-track.simplebar-vertical {
+  width: 7px;
+  background: rgba(0, 0, 0, 0.0902);
+}
+
+.simplebar-scrollbar {
+  right: 0;
+}
+
+.simplebar-scrollbar:before {
+  opacity: 1;
+  border-radius: 0;
+  background: @colorBackgroundLight;
+}

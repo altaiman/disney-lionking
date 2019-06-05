@@ -1,0 +1,29 @@
+- 
+  var n = 0
+
+mixin faq
+  +b.faq
+    +e.UL.list(data-simplebar)
+      +e.LI.item
+        +b.question
+          +e.header
+            span КТО ЯВЛЯЕТСЯ ОРГАНИЗАТОРОМ АКЦИИ?
+          +e.answer
+            p Организатором акции является общество с ограниченной ответственностью «свит бокс» и «дисней».
+      while n < 10
+        +e.LI.item
+          +b.question
+            +e.header
+              span КТО ЯВЛЯЕТСЯ ОРГАНИЗАТОРОМ АКЦИИ?
+            +e.answer
+              p Организатором акции является общество с ограниченной ответственностью «свит бокс» и «дисней».
+        - n++
+        
+    +e.SPAN.caption Не нашел ответ на свой вопрос?<br>задай его нам
+
+    +button({
+      type: 'button',
+      name: 'Задать вопрос',
+      style: 0,
+      mod: 'decor-left'
+    })

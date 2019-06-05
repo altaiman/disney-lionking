@@ -1,0 +1,21 @@
+include ../global.pug
+include navigator/navigator.pug
+
+mixin header
+  +b.HEADER.header
+    +e.container.container
+      +e.top
+        //- +b.BUTTON.city
+        //-   +e.ico
+        //-     +svg({
+        //-       name: 'ico-place'
+        //-     })
+        //-   span Воронеж
+      +e.main
+        +e.nav
+          +navigator
+        +e.logo
+          +b.A.logo(href="#")
+            img(src="img/logos/disney.svg" alt="Disney" title="Disney")
+          +b.A.logo(href="#")
+            img(src="img/logos/confitreid.svg" alt="Конфитрейд" title="Конфитрейд")

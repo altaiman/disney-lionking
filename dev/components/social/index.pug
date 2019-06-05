@@ -1,0 +1,15 @@
+include ../global.pug
+include data.pug
+
+mixin social(data)
+  +b.social
+    +e.UL.list
+      each item in dataSocial
+        +e.LI.item
+          +e.A.link(href="#" target="_blank" title=item.name)
+            +svg({
+              name: item.symbol
+            })
+      
+      
+  

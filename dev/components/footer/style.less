@@ -1,0 +1,51 @@
+.footer {
+  position: relative;
+  z-index: 3;
+  height: 520px;
+  margin-top: -110px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: url('../img/backgrounds/back-footer.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__main {
+    display: flex;
+    width: 976px;
+    max-width: 100%;
+    padding-top: 184px;
+    margin: 0 5% 0 auto;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(1) {
+      width: 37%;
+    }
+
+    &:nth-child(2) {
+      width: 25%;
+    }
+
+    &:nth-child(3) {
+      width: 38%;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 30px;
+    color: currentColor;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,49 @@
+.table {
+  display: block;
+  width: 1170px;
+  max-width: 100%;
+  margin: 0 auto 100px;
+
+  &__main {
+    width: 100%;
+    text-align: left;
+  }
+
+  &__head {
+    font-family: @fontCaption;
+    font-size: 35px;
+    font-weight: 900;
+  }
+
+  &__cell {
+    padding-top: 15px;
+    padding-bottom: 16px;
+
+    &:nth-child(1) {
+      width: 40%;
+
+      &:not(.table__cell_head) {
+        padding-left: 24px;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 40%;
+    }
+
+    &:nth-child(3) {
+      width: 20%;
+    }
+  }
+
+  &__cell_head {
+    padding: 20px 0 45px;
+  }
+
+  &__row {
+
+    &:nth-child(even) {
+      background: rgba(230, 230, 230, 0.51);
+    }
+  }
+}

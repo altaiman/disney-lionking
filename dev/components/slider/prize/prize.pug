@@ -1,0 +1,10 @@
+mixin prize(data)
+  +b.prize
+    +e.image(style="background-color: "+data.color+";")
+      img(src=global.paths.pictures+'prizes/'+data.img)
+    +e.caption
+      span!= data.caption
+    +button({
+      type: 'button',
+      name: 'Подробнее'
+    })

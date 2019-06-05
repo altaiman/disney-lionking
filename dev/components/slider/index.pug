@@ -1,0 +1,43 @@
+include data.pug
+include prize/prize.pug
+include product/product.pug
+
+mixin slider(data)
+  +b.slider(class='_'+data.slider data-slider=data.slider)
+    - if (data.controls)
+      +e.controls(data-slider-controls)
+        +b.BUTTON.arrow._prev(data-slider-controls-prev)
+          +svg({
+            name: 'ico-arrow'
+          })
+        +b.BUTTON.arrow._next(data-slider-controls-next)
+          +svg({
+            name: 'ico-arrow'
+          })
+    +e.UL.slides(data-slider-slides)
+      block
+
+mixin sliderPrizes
+  +slider({
+    slider: 'prizes',
+    controls: true
+  })
+    each item in dataSliders.prizes
+      +e.LI.item
+        +prize({
+          caption: item.caption,
+          img: item.img,
+          color: item.color
+        })
+    
+mixin sliderProduction
+  +slider({
+    slider: 'production',
+    controls: true
+  })
+    each item in dataSliders.production
+      +e.LI.item
+        +product({
+          caption: item.caption,
+          img: item.img,
+        })

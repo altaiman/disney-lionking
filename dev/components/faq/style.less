@@ -1,0 +1,70 @@
+.faq {
+  width: 670px;
+  margin: 74px auto;
+
+  &__list {
+    margin: 0 0 110px;
+    padding: 0;
+    list-style: none;
+    height: 262px;
+  }
+
+  &__caption {
+    display: block;
+    margin: 0 0 50px;
+    font-family: @fontCaption;
+    font-size: 30px;
+  }
+}
+
+.question {
+  text-align: left;
+  margin-bottom: 44px;
+  transition: all .16s;
+
+  &__header {
+    position: relative;
+    padding-right: 25%;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      right: 21%;
+      top: 50%;
+      transform: translateY(-50%) scaleY(-1);
+      width: 30px;
+      height: 16px;
+      content: '';
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAxNiI+ICA8cGF0aCBmaWxsPSIjMDAwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS1taXRlcmxpbWl0PSIyMi45MyIgc3Ryb2tlLXdpZHRoPSI0Ljk4IiBkPSJNNC40IDMuMjJjLS40NS0uMy0uODktLjMtMS4xOCAwYS45LjkgMCAwIDAgMCAxLjE3bDguMDYgOC4yYy40NC4zLjg4LjMgMS4xNyAwbDguMi04LjJjLjMtLjQ0LjMtLjg4IDAtMS4xNy0uMjktLjMtLjczLS4zLTEuMTcgMGwtNy42MiA3LjYyTDQuNCAzLjIyeiIvPjwvc3ZnPg==);
+      transition: all .16s;
+    }
+  }
+
+  &__answer {
+    display: none;
+    padding: 12px 36px;
+    line-height: 1.4;
+
+    p {
+      margin: 0 0 10px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+
+  &.open {
+    margin-bottom: 28px;
+
+    .question {
+      &__header {
+        &::before {
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}

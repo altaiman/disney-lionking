@@ -1,0 +1,31 @@
+/* fonts */
+
+@fontsPath: '../fonts/';
+
+@fontSizeDefault: 22px;
+@fontSizeDefaultS: .9em; // 20px
+@fontSizeTitle: 2.272em; // 50px
+@fontSizeCaption: 1.59em; // 25px
+@fontSizeButton: 1.59rem; // 25px
+
+@fontSizeDefaultL: 1.25rem; // ??
+
+@fontSizeCaptionS: round(@fontSizeDefault * 1.25); // 20px
+@fontSizeCaptionXS: @fontSizeDefaultS; // 14px
+@fontSizeLabel: round(@fontSizeDefault * .625); // 10px
+
+@font-face {
+    font-family: 'Movavi Grotesque';
+    src: url('@{fontsPath}/MovaviGrotesqueBlack.woff2') format('woff2'),
+        url('@{fontsPath}/MovaviGrotesqueBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('@{fontsPath}/CenturyGothic.woff2') format('woff2'),
+        url('@{fontsPath}/CenturyGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

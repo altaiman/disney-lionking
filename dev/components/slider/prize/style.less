@@ -1,0 +1,38 @@
+.prize {
+  text-align: center;
+  line-height: 1.4;
+  transform: scale(1);
+
+  &:hover {
+    .prize {
+      &__image {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+    display: block;
+    margin: 0 auto 30px;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    transition: all .32s;
+
+    img {
+      .positionCenter();
+      margin-left: -30px;
+    }
+  }
+
+  &__caption {
+    margin: 0 0 50px;
+  }
+
+  .button {
+    &::after {
+      display: none;
+    }
+  }
+}

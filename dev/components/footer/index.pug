@@ -1,0 +1,17 @@
+include ../global.pug
+include ../social/index.pug
+
+mixin footer
+  +b.FOOTER.footer
+    +e.container.container
+      +e.main
+        +e.block
+          +e.A.link(href="#") Зарегестрировать чек
+          +e.A.link(href="#") Призы
+        +e.block
+          +e.A.link(href="#") Продукция
+          +e.A.link(href="#") Победители
+        +e.block
+          +e.A.link(href="#") Правила акции
+          +e.A.link(href="#") FAQ
+      +social

@@ -1,0 +1,139 @@
+//- includes
+include components/head/index.pug
+include components/svg/index.pug
+
+include components/header/index.pug
+include components/common/index.pug
+include components/slider/index.pug
+include components/steps/index.pug
+include components/faq/index.pug
+include components/search/index.pug
+include components/form/index.pug
+include components/table/index.pug
+include components/pages/index.pug
+include components/footer/index.pug
+include components/footer/scripts.pug
+
+//- end includes
+
+//- variables page 
+- 
+	pageSettings = {
+		title: 'Король Лев'
+	}
+
+//- end variables
+
+doctype html
+html(lang=global.lang)
+	+head(pageSettings)
+	+b.BODY.page
+		+header
+		
+		+e.MAIN.content
+			+b.SECTION.section._welcome
+				+e.container.container
+					+b.IMG.playstation(src="img/playstation.png")
+						
+					+b.IMG.sweetboxes(src="img/sweetboxes.png")
+						
+					+e.content._pos-right
+						+b.H2.title._decor-left Выиграй приставку или смартфон.
+						+b.SPAN.caption И много других ценных призов.
+						+e.text 
+							p Покупай продукцию со специальной промо стойки на сумму от 300 рублей, заполняй форму ниже и прикрепляй чек. Выигрывай призы.
+						+form
+						
+			+b.SECTION.section._text-dark
+				+e.container.container
+					+e.title
+						+b.H2.title Призы
+						+b.SPAN.caption Розыгрыш призов каждую неделю.
+					+sliderPrizes
+					
+			+b.SECTION.section._fixed._lionking
+				+e.background._left
+					+b.lionking
+						img(src="img/backgrounds/lionking.svg")
+					+e.background-image
+						img(src="img/backgrounds/sunset.png")
+				+e.container.container
+					+e.content._pos-left._pos-v-center
+						+b.H2.title._inline-decor-left ВЫИГРЫВАЙ ПРИЗЫ 
+						+e.text._margin
+							p Покупай продукцию со специальной промо стойки на сумму от 300 рублей, заполняй форму ниже и прикрепляй чек. Выигрывай призы.
+						+button({
+							type: 'button',
+							name: 'ЗАРЕГИСТРИРОВАТЬ ЧЕК',
+							style: 0,
+							size: 'full',
+							mod: 'decor-left'
+						})
+						
+			+b.SECTION.section._text-dark._production
+				+e.container.container
+					+e.title
+						+b.H2.title Продукция<br>участвующая в акции
+					+sliderProduction
+					+button({
+						type: 'link',
+						name: 'Подробнее',
+						mod: 'decor-right',
+						href: '#'
+					})
+					
+			+b.SECTION.section._fixed._princes
+				+e.background._right
+					+e.background-image
+						img(src="img/backgrounds/princes.png")
+				+e.container.container
+					+e.content._pos-right._pos-v-center._text-right
+						+b.H2.title._inline-decor-right ТЫ ТОЖЕ МОЖЕШЬ ВЫИГРАТЬ
+						+b.SPAN.caption Прими участие в акции
+						+e.text._margin
+							p Покупай продукцию со специальной промо стойки на сумму от 300 рублей, заполняй форму ниже и прикрепляй чек. Выигрывай призы.
+						+button({
+							type: 'button',
+							name: 'ПРИНЯТЬ УЧАСТИЕ В АКЦИИ',
+							style: 0,
+							size: 'full',
+							mod: 'decor-left'
+						})
+						
+			+b.SECTION.section._text-dark._steps._gray
+				+e.container.container
+					+e.title
+						+b.H2.title Как выиграть?
+						+b.SPAN.caption Механика действий
+					+steps
+					+button({
+						type: 'button',
+						name: 'ЗАРЕГИСТРИРОВАТЬ ЧЕК',
+						mod: 'fixed'
+					})
+					
+			+b.SECTION.section._text-dark._questions
+				+e.container.container
+					+e.title
+						+b.H2.title Вопросы и ответы
+					+faq
+					
+			+b.SECTION.section._text-dark._winners._gray
+				+e.container.container
+					+e.title
+						+b.H2.title Победители
+						+search
+					+table
+					+pages
+					
+					+b.organizator
+						+e.block
+							+e.A.link(href="#")
+								img(src="img/logos/disney-red.svg" alt="Disney" title="Disney")
+						+e.block
+							+e.A.link(href="#")
+								img(src="img/logos/confitreid.svg" alt="Конфитрейд" title="Конфитрейд")
+				
+		+footer
+		
+		+scripts

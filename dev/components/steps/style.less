@@ -1,0 +1,126 @@
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin: 170px 0 160px;
+  padding: 0;
+  list-style: none;
+  counter-reset: item;
+
+  &__item {
+    position: relative;
+    z-index: 1;
+    padding: 0 5%;
+    width: 30%;
+    font-family: @fontCaption;
+    font-size: 30px;
+    font-weight: 900;
+    counter-increment: item;
+    transition: all .32s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &::before {
+      .positionCenter();
+      z-index: -1;
+      width: 100%;
+      height: 200px;
+      content: '';
+      background: url('../img/backgrounds/step.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &:nth-child(1) {
+      left: -1%;
+
+      .steps {
+        &__item-wrap {
+          transform: rotate(-3deg);
+          top: -12px;
+        }
+
+        &__num {
+          left: -30px;
+          top: -16px;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      left: 2%;
+      transform: rotate(5deg);
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      .steps {
+        &__num {
+          top: -20px;
+          left: -35px;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      left: 1%;
+
+      .steps {
+        &__item-wrap {
+          transform: rotate(2deg);
+        }
+
+        &__num {
+          top: -25px;
+          left: -30px;
+        }
+      }
+    }
+  }
+
+  &__item-wrap {
+    position: relative;
+    line-height: 1.1;
+
+    p {
+      margin: 0;
+    }
+
+    strong {
+      display: block;
+      color: @colorRed;
+    }
+  }
+
+  &__num {
+    position: absolute;
+    content: counter(item);
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    font-size: 52px;
+    color: @colorRed;
+    background: currentColor;
+
+    &::before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      content: '';
+      width: 87px;
+      height: 87px;
+      border-radius: 50%;
+      background: @colorYellow;
+      transform: translate(-50%,-50%) scaleY(.81) scaleX(.96);
+    }
+
+    &::after {
+      .positionCenter();
+      content: counter(item);
+      margin-top: 2px;
+    }
+  }
+}

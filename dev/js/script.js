@@ -13,9 +13,9 @@
       contain: true
     },
     'production': {
-      cellAlign: 'left',
+      cellAlign: 'center',
       prevNextButtons: false,
-      groupCells: 4,
+      groupCells: ($(window).width() <= 1000) ? (($(window).width() <= 768) ? 1 : 2) : 4,
       wrapAround: true,
       contain: true
     }

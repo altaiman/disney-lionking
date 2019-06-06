@@ -27,6 +27,7 @@
   &__block {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
     &:nth-child(1) {
       width: 37%;
@@ -47,5 +48,11 @@
     margin: 0 0 30px;
     color: currentColor;
     text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: @transitionSpeedDefault;
+
+    &:hover {
+      border-color: currentColor;
+    }
   }
 }

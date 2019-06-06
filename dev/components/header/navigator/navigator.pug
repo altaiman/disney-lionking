@@ -2,11 +2,15 @@ include data.pug
 
 mixin navigator
   +b.NAV.navigator
+    +e.BUTTON.menu
+      +svg({
+        name: 'ico-menu'
+      })
     +e.UL.list
       each item in dataNavigator
         +e.LI.item
           +e.A.link(href="#")= item
-    +e.A.link(href="#")
+    +e.A.link._ico(href="#")
       +e.DIV.link-ico
         +svg({
           name: 'ico-auth'

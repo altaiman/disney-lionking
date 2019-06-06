@@ -31,7 +31,7 @@ html(lang=global.lang)
 		+header
 		
 		+e.MAIN.content
-			+b.SECTION.section._welcome
+			+b.SECTION.section._welcome(id="register")
 				+b.svg._orange._sun
 					+svg({
 						name: 'decor-sun',
@@ -83,7 +83,8 @@ html(lang=global.lang)
 						+e.text._margin
 							p Покупай продукцию со специальной промо стойки на сумму от 300 рублей, заполняй форму ниже и прикрепляй чек. Выигрывай призы.
 						+button({
-							type: 'button',
+							type: 'link',
+							href: '#register',
 							name: 'ЗАРЕГИСТРИРОВАТЬ ЧЕК',
 							style: 0,
 							size: 'full',
@@ -137,8 +138,9 @@ html(lang=global.lang)
 						+e.text._margin
 							p Покупай продукцию со специальной промо стойки на сумму от 300 рублей, заполняй форму ниже и прикрепляй чек. Выигрывай призы.
 						+button({
-							type: 'button',
+							type: 'link',
 							name: 'ПРИНЯТЬ УЧАСТИЕ В АКЦИИ',
+							href: '#register',
 							style: 0,
 							size: 'full',
 							mod: 'decor-left'
@@ -151,7 +153,8 @@ html(lang=global.lang)
 						+b.SPAN.caption Механика действий
 					+steps
 					+button({
-						type: 'button',
+						type: 'link',
+						href: '#register',
 						name: 'ЗАРЕГИСТРИРОВАТЬ ЧЕК',
 						mod: 'fixed'
 					})

@@ -76,4 +76,13 @@
     $(this).parent().toggleClass('open');
   })
 
+  $('.navigator__menu').on('click', function(e) {
+    e.preventDefault();
+    $('.menu').toggle();
+  })
+
+  $('.menu__close').on('click', function(e) {
+    $('.menu').hide();
+  })
+
 })(window);

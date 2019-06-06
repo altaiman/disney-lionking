@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 320 1079">
+  <path fill="url(#paint0_linear)" fill-rule="evenodd" d="M320 426H0v612h320V426z" clip-rule="evenodd"/>
+  <path fill="#fff" fill-rule="evenodd" d="M320 866L0 937v90l320 39V866z" clip-rule="evenodd"/>
+  <path fill="url(#paint1_linear)" fill-rule="evenodd" d="M320 879L0 950v90l320 39V879z" clip-rule="evenodd"/>
+  <path fill="#fff" d="M320 726L0 634V38h320v688z"/>
+  <path fill="url(#paint2_linear)" d="M320 714L0 622V-2h320v716z"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="190" x2="190" y1="1038" y2="426" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#028240"/>
+      <stop offset="1" stop-color="#01A84E"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear" x1="211" x2="211" y1="1099" y2="841" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F79000"/>
+      <stop offset="1" stop-color="#FC0"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear" x1="547" x2="-167" y1="346" y2="346" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E31E24"/>
+      <stop offset="1" stop-color="#9D231F"/>
+    </linearGradient>
+  </defs>
+</svg>

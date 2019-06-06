@@ -3,6 +3,12 @@ include navigator/navigator.pug
 
 mixin header
   +b.HEADER.header
+    +b.menu
+      +e.BUTTON.close
+      +e.UL.list
+        each item in dataNavigator
+          +e.LI.item
+            +e.A.link(href="#")= item
     +e.container.container
       +e.top
         //- +b.BUTTON.city

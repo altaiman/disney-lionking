@@ -10,45 +10,18 @@ mixin table
           +e.TH.cell._head
             span ДАТА
       +e.TBODY.body
-        +e.TR.row
-          +e.TD.cell
-            span Стасенко Александр
-          +e.TD.cell
-            span набор посуды
-          +e.TD.cell
-            span 10-05-2019
-        +e.TR.row
-          +e.TD.cell
-            span Стасенко Александр
-          +e.TD.cell
-            span набор посуды
-          +e.TD.cell
-            span 10-05-2019
-        +e.TR.row
-          +e.TD.cell
-            span Стасенко Александр
-          +e.TD.cell
-            span набор посуды
-          +e.TD.cell
-            span 10-05-2019
-        +e.TR.row
-          +e.TD.cell
-            span Стасенко Александр
-          +e.TD.cell
-            span набор посуды
-          +e.TD.cell
-            span 10-05-2019
-        +e.TR.row
-          +e.TD.cell
-            span Стасенко Александр
-          +e.TD.cell
-            span набор посуды
-          +e.TD.cell
-            span 10-05-2019
-        +e.TR.row
-          +e.TD.cell
-            span Стасенко Александр
-          +e.TD.cell
-            span набор посуды
-          +e.TD.cell
-            span 10-05-2019
+        +tableTR
+        +tableTR
+        +tableTR
+        +tableTR
+        +tableTR
+        +tableTR
+            
+mixin tableTR
+  +e.TR.row
+    +e.TD.cell(data-label="ПОБЕДИТЕЛЬ")
+      span Стасенко Александр
+    +e.TD.cell(data-label="ПРИЗ")
+      span набор посуды
+    +e.TD.cell(data-label="ДАТА")
+      span 10-05-2019

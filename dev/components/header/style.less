@@ -23,6 +23,62 @@
   }
 }
 
+.menu {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  color: @colorTextDark;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: @colorYellow;
+  padding: 60px 40px 40px;
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .16s;
+
+    &:focus {
+      color: @colorRed;
+      outline: none;
+    }
+
+    &::before {
+      .positionCenter();
+      content: '×';
+      font-size: 50px;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: block;
+    margin: 0 0 20px;
+  }
+
+  &__link {
+    font-family: @fontCaption;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+    color: currentColor;
+  }
+}
+
 .city {
   display: inline-flex;
   align-items: center;

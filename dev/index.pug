@@ -32,6 +32,16 @@ html(lang=global.lang)
 		
 		+e.MAIN.content
 			+b.SECTION.section._welcome
+				+b.svg._orange._sun
+					+svg({
+						name: 'decor-sun',
+						size: [248,230]
+					})
+				+b.svg._yellow._paw
+					+svg({
+						name: 'decor-paw',
+						size: [118,130]
+					})
 				+e.container.container
 					+b.IMG.playstation(src="img/playstation.png")
 						
@@ -52,6 +62,16 @@ html(lang=global.lang)
 					+sliderPrizes
 					
 			+b.SECTION.section._fixed._lionking
+				+b.svg._orange._sun
+					+svg({
+						name: 'decor-sun2',
+						size: [345,350]
+					})
+				+b.svg._green._spiral
+					+svg({
+						name: 'decor-spiral',
+						size: [228,211]
+					})
 				+e.background._left
 					+b.lionking
 						img(src="img/backgrounds/lionking.svg")
@@ -71,6 +91,11 @@ html(lang=global.lang)
 						})
 						
 			+b.SECTION.section._text-dark._production
+				+b.svg._yellow._sun
+					+svg({
+						name: 'decor-sun2',
+						size: [178,171]
+					})
 				+e.container.container
 					+e.title
 						+b.H2.title Продукция<br>участвующая в акции
@@ -83,8 +108,27 @@ html(lang=global.lang)
 					})
 					
 			+b.SECTION.section._fixed._princes
+				+b.svg._yellow._sun
+					+svg({
+						name: 'decor-sun',
+						size: [434,404]
+					})
+				+b.svg._red._paw
+					+svg({
+						name: 'decor-paw',
+						size: [232,264]
+					})
+				+b.svg._darkred._sun2
+					+svg({
+						name: 'decor-sun',
+						size: [249,232]
+					})
 				+e.background._right
 					+e.background-image
+						+b.disney
+							+svg({
+								name: 'disney'
+							})
 						img(src="img/backgrounds/princes.png")
 				+e.container.container
 					+e.content._pos-right._pos-v-center._text-right
@@ -113,6 +157,16 @@ html(lang=global.lang)
 					})
 					
 			+b.SECTION.section._text-dark._questions
+				+b.svg._yellow._paw
+					+svg({
+						name: 'decor-paw',
+						size: [239,265]
+					})
+				+b.svg._red._sun
+					+svg({
+						name: 'decor-sun',
+						size: [444,414]
+					})
 				+e.container.container
 					+e.title
 						+b.H2.title Вопросы и ответы

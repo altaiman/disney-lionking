@@ -620,6 +620,11 @@
 
     &__list {
       height: 193px;
+      margin-bottom: 60px;
+    }
+
+    &__caption {
+      font-size: 20px;
     }
   }
 
@@ -634,6 +639,91 @@
   .simplebar-scrollbar,
   .simplebar-track.simplebar-vertical {
     width: 5px;
+  }
+
+  .section_questions {
+    height: 900px;
+
+    &::before {
+      height: 860px;
+    }
+  }
+
+  .search {
+    width: 276px;
+
+    &__field {
+      font-size: 15px;
+    }
+
+    &__btn {
+      width: 75px;
+      height: 75px;
+    }
+  }
+
+  .table {
+    font-size: 15px;
+
+    &__cell_head {
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .organizator {
+    margin-top: 180px;
+
+    &__link {
+      width: 190px;
+      height: 110px;
+    }
+  }
+
+  .section_winners {
+    padding-bottom: 140px;
+  }
+
+  .footer {
+    height: 320px;
+
+    &::before {
+      background-position-x: -120px;
+    }
+
+    &__main {
+      padding-top: 100px;
+      width: 420px;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    &__link {
+      font-size: 15px;
+      margin: 0 0 20px;
+      width: 50%;
+    }
+
+    &__block {
+      flex-direction: row;
+
+      &:nth-child(1n) {
+        width: auto;
+        height: 40px;
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-top: 30px;
+
+    &__item {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 

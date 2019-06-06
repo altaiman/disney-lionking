@@ -8,7 +8,7 @@
     'prizes': {
       cellAlign: 'center',
       prevNextButtons: false,
-      groupCells: 2,
+      groupCells: ($(window).width() <= 768) ? 1 : 2,
       wrapAround: true,
       contain: true
     },

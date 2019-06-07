@@ -27,13 +27,27 @@ mixin form
             name: 'ico-attach'
           })
         span Загрузить фото чека
-    +button({
-      type: 'button',
-      name: 'ЗАРЕГЕСТРИРОВАТЬ ЧЕК',
-      size: 'full',
-      style: 0,
-      mod: 'decor-right'
-    })
+    +b.BUTTON.button._decor-right._size-full._light(data-modal-open="thanks")
+      span ЗАРЕГЕСТРИРОВАТЬ ЧЕК
     
         
-        
+mixin formQuestion
+  +b.FORM.form
+    +e.line
+      +field({
+        placeholder: 'ФИО'
+      })
+    +e.line
+      +field({
+        placeholder: 'E-mail'
+      })
+    +e.line
+      +b.LABEL.field._text
+        +e.DIV.input
+          textarea(placeholder="Введите свой вопрос")
+          
+    +button({
+      type: 'button',
+      size: 'full',
+      name: 'задать вопрос'
+    })

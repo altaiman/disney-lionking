@@ -20,10 +20,6 @@ mixin faq
         - n++
         
     +e.SPAN.caption Не нашел ответ на свой вопрос?<br>задай его нам
-
-    +button({
-      type: 'button',
-      name: 'Задать вопрос',
-      style: 0,
-      mod: 'decor-left'
-    })
+    
+    +b.BUTTON.button._decor-left._light(data-modal-open="question")
+      span Задать вопрос

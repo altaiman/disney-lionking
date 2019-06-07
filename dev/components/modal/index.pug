@@ -1,0 +1,34 @@
+include ../form/index.pug
+
+mixin modalPrize
+  +b.modal._size-s(data-modal="prize")
+    +e.BUTTON.close(data-izimodal-close)
+      +svg({
+        name: 'ico-close'
+      })
+    +e.content
+      +b.prize
+        +e.image(style="background-color: #01A84E;")
+          img(src='pictures/prizes/playstation.png')
+      +e.text
+        p Денежный приз акции в размере 36 308 рублей*, который может позволить купить игровую приставку Playstation 4
+
+mixin modalThanks
+  +b.modal._size-s._thanks(data-modal="thanks")
+    +e.BUTTON.close(data-izimodal-close)
+      +svg({
+        name: 'ico-close'
+      })
+    +e.content
+      +b.SPAN.title Спасибо за регистрацию!
+
+mixin modalQuestion
+  +b.modal._size-l(data-modal="question")
+    +e.BUTTON.close(data-izimodal-close)
+      +svg({
+        name: 'ico-close'
+      })
+    +e.content
+      +e.text
+        p Не нашел ответ на свой вопрос? задай его нам
+      +formQuestion

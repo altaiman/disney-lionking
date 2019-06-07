@@ -561,6 +561,18 @@
 }
 
 @media(max-width: 1000px) {
+  .modal_thanks {
+    .modal {
+      &__content {
+        height: auto;
+
+        .title {
+          top: 0;
+        }
+      }
+    }
+  }
+
   .lionking {
     width: 254px;
     height: 75px;
@@ -891,6 +903,29 @@
 }
 
 @media (max-width: 768px) {
+  .modal {
+    &__content {
+      padding: 20px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+
+    &__close {
+      top: 10px;
+      right: 10px;
+    }
+  }
+
+  .modal_size-l {
+    .modal {
+      &__content {
+        padding: 20px;
+      }
+    }
+  }
+
   .page {
     font-size: 13px;
   }

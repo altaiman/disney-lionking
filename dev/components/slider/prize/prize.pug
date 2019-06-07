@@ -4,7 +4,5 @@ mixin prize(data)
       img(src=global.paths.pictures+'prizes/'+data.img)
     +e.caption
       span!= data.caption
-    +button({
-      type: 'button',
-      name: 'Подробнее'
-    })
+    +b.BUTTON.button(data-modal-open="prize")
+      span Подробнее

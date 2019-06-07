@@ -1,8 +1,8 @@
 @pluginsPath: 'plugins';
 
 @import url('@{pluginsPath}/tingle.min.less');
-@import url('@{pluginsPath}/nice-select.less');
 @import url('@{pluginsPath}/simplebar.less');
+@import url('@{pluginsPath}/iziModal.min.less');
 
 .simplebar-track.simplebar-vertical {
   width: 7px;
@@ -17,4 +17,26 @@
   opacity: 1;
   border-radius: 0;
   background: @colorBackgroundLight;
+}
+
+.modal {
+  max-width: 95% !important;
+  border-radius: 25px !important;
+}
+
+.modal_size-s {
+  width: 615px;
+}
+
+.modal_size-l {
+  width: 932px;
+
+  .modal {
+    &__content {
+      width: 576px;
+      max-width: 100%;
+      padding: 68px 0;
+      margin: 0 auto;
+    }
+  }
 }

@@ -30,11 +30,11 @@
 
       &:focus {
         outline: none;
-        color: @colorHighlight;
+        color: @colorRed;
       }
 
       &:hover {
-        color: @colorHighlight;
+        color: @colorRed;
       }
 
       &::placeholder {
@@ -48,37 +48,12 @@
     }
 
   }
-
-  &__edit {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    padding: 0;
-    border: none;
-    background: none;
-    color: @colorTextGray;
-    transition: all .16s;
-
-    &:hover,
-    &:focus {
-      color: @colorHighlight;
-    }
-
-    &:focus {
-      outline: none;
-    }
-
-    svg {
-      .positionCenter();
-      max-width: 100%;
-      max-height: 100%;
-      fill: currentColor;
-    }
-  }
 }
 
 .field_text {
-  height: 120px;
+  padding: 0 20px;
+  border-radius: 30px;
+  height: 242px;
 
   .field {
     &__input {

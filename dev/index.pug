@@ -9,6 +9,7 @@ include components/steps/index.pug
 include components/faq/index.pug
 include components/search/index.pug
 include components/form/index.pug
+include components/modal/index.pug
 include components/table/index.pug
 include components/pages/index.pug
 include components/footer/index.pug
@@ -192,5 +193,10 @@ html(lang=global.lang)
 								img(src="img/logos/confitreid.svg" alt="Конфитрейд" title="Конфитрейд")
 				
 		+footer
+		
+		+e.modals
+			+modalPrize
+			+modalThanks
+			+modalQuestion
 		
 		+scripts

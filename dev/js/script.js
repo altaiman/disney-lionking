@@ -118,4 +118,20 @@
     $('.menu').hide();
   })
 
+  $('.menu__link').on('click', function() {
+    $('.menu__close').click()
+  })
+
+  // modals
+
+  $('[data-modal]').iziModal()
+
+  $('[data-modal-open]').on('click', function(e) {
+    e.preventDefault()
+
+
+    const data = $(this).data('modal-open')
+    $(`[data-modal="${data}"]`).iziModal('open')
+  })
+
 })(window);

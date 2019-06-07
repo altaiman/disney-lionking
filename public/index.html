@@ -120,7 +120,7 @@
                   </div><span>Загрузить фото чека</span>
                 </label>
               </div>
-              <button class="button button_size-full button_light button_decor-right"><span>ЗАРЕГЕСТРИРОВАТЬ ЧЕК</span>
+              <button class="button button_decor-right button_size-full button_light" data-modal-open="thanks"><span>ЗАРЕГЕСТРИРОВАТЬ ЧЕК</span>
               </button>
             </form>
           </div>
@@ -152,7 +152,7 @@
                   </div>
                   <div class="prize__caption"><span>4 приставки<br>Sony Playstation 4</span>
                   </div>
-                  <button class="button"><span>Подробнее</span>
+                  <button class="button" data-modal-open="prize"><span>Подробнее</span>
                   </button>
                 </div>
               </li>
@@ -162,7 +162,7 @@
                   </div>
                   <div class="prize__caption"><span>4 смартфона<br>SAMSUNG A50</span>
                   </div>
-                  <button class="button"><span>Подробнее</span>
+                  <button class="button" data-modal-open="prize"><span>Подробнее</span>
                   </button>
                 </div>
               </li>
@@ -172,7 +172,7 @@
                   </div>
                   <div class="prize__caption"><span>4 приставки<br>Sony Playstation 4</span>
                   </div>
-                  <button class="button"><span>Подробнее</span>
+                  <button class="button" data-modal-open="prize"><span>Подробнее</span>
                   </button>
                 </div>
               </li>
@@ -182,7 +182,7 @@
                   </div>
                   <div class="prize__caption"><span>4 смартфона<br>SAMSUNG A50</span>
                   </div>
-                  <button class="button"><span>Подробнее</span>
+                  <button class="button" data-modal-open="prize"><span>Подробнее</span>
                   </button>
                 </div>
               </li>
@@ -192,7 +192,7 @@
                   </div>
                   <div class="prize__caption"><span>4 приставки<br>Sony Playstation 4</span>
                   </div>
-                  <button class="button"><span>Подробнее</span>
+                  <button class="button" data-modal-open="prize"><span>Подробнее</span>
                   </button>
                 </div>
               </li>
@@ -202,7 +202,7 @@
                   </div>
                   <div class="prize__caption"><span>4 смартфона<br>SAMSUNG A50</span>
                   </div>
-                  <button class="button"><span>Подробнее</span>
+                  <button class="button" data-modal-open="prize"><span>Подробнее</span>
                   </button>
                 </div>
               </li>
@@ -212,7 +212,7 @@
                   </div>
                   <div class="prize__caption"><span>4 приставки<br>Sony Playstation 4</span>
                   </div>
-                  <button class="button"><span>Подробнее</span>
+                  <button class="button" data-modal-open="prize"><span>Подробнее</span>
                   </button>
                 </div>
               </li>
@@ -222,7 +222,7 @@
                   </div>
                   <div class="prize__caption"><span>4 смартфона<br>SAMSUNG A50</span>
                   </div>
-                  <button class="button"><span>Подробнее</span>
+                  <button class="button" data-modal-open="prize"><span>Подробнее</span>
                   </button>
                 </div>
               </li>
@@ -598,7 +598,7 @@
                 </div>
               </li>
             </ul><span class="faq__caption">Не нашел ответ на свой вопрос?<br>задай его нам</span>
-            <button class="button button_light button_decor-left"><span>Задать вопрос</span>
+            <button class="button button_decor-left button_light" data-modal-open="question"><span>Задать вопрос</span>
             </button>
           </div>
         </div>
@@ -746,6 +746,70 @@
         </div>
       </div>
     </footer>
+    <div class="page__modals">
+      <div class="modal modal_size-s" data-modal="prize">
+        <button class="modal__close" data-izimodal-close="data-izimodal-close">
+          <svg>
+            <use xlink:href="img/symbols.svg#svg-ico-close"></use>
+          </svg>
+        </button>
+        <div class="modal__content">
+          <div class="prize">
+            <div class="prize__image" style="background-color: #01A84E;"><img src="pictures/prizes/playstation.png"/>
+            </div>
+          </div>
+          <div class="modal__text">
+            <p>Денежный приз акции в размере 36 308 рублей*, который может позволить купить игровую приставку Playstation 4</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_size-s modal_thanks" data-modal="thanks">
+        <button class="modal__close" data-izimodal-close="data-izimodal-close">
+          <svg>
+            <use xlink:href="img/symbols.svg#svg-ico-close"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><span class="title">Спасибо за регистрацию!</span>
+        </div>
+      </div>
+      <div class="modal modal_size-l" data-modal="question">
+        <button class="modal__close" data-izimodal-close="data-izimodal-close">
+          <svg>
+            <use xlink:href="img/symbols.svg#svg-ico-close"></use>
+          </svg>
+        </button>
+        <div class="modal__content">
+          <div class="modal__text">
+            <p>Не нашел ответ на свой вопрос? задай его нам</p>
+          </div>
+          <form class="form">
+            <div class="form__line">
+              <label class="field">
+                <div class="field__input">
+                  <input placeholder="ФИО"/>
+                </div>
+              </label>
+            </div>
+            <div class="form__line">
+              <label class="field">
+                <div class="field__input">
+                  <input placeholder="E-mail"/>
+                </div>
+              </label>
+            </div>
+            <div class="form__line">
+              <label class="field field_text">
+                <div class="field__input">
+                  <textarea placeholder="Введите свой вопрос"></textarea>
+                </div>
+              </label>
+            </div>
+            <button class="button button_size-full"><span>задать вопрос</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="js/libs.js"></script>
     <script src="js/script.js"></script>
     <script src="js/maps.js"></script>

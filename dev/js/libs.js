@@ -2,3 +2,4 @@
 @@include('vendor/svg4everybody.min.js');
 @@include('vendor/flickity.pkgd.min.js');
 @@include('vendor/simplebar.min.js');
+@@include('vendor/iziModal.min.js');

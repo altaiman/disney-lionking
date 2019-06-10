@@ -37,6 +37,32 @@
     document.querySelector('.menu').classList.remove('menu_open')
   }
 
+  var translate = function(elem, x, y, rotate) {
+		$(elem).css({
+			'transform': 'translate3d(' + x + 'px,' + y + 'px, 0px) rotate('+ -rotate +'deg)',
+			'-webkit-backface-visibility': 'hidden',
+			'-webkit-perspective': 1000,
+			'will-change': 'transform'
+		});
+	};
+
+  // parallax
+  $(window).on('scroll', function() {
+    var top = $(document).scrollTop();
+
+    translate("#decor-el1", 0, top/10, top/30);
+    translate("#decor-el2", 0, -top/10, 0);
+    translate("#decor-el3", 0, -top/40, top/30);
+    translate("#decor-el4", 0, top/100, 0);
+    translate("#decor-el5", 0, -top/20, -top/10);
+    translate("#decor-el6", 0, 0, -top/20);
+    translate("#decor-el7", 0, top/60, 0);
+    translate("#decor-el8", 0, 0, -top/20);
+    translate("#decor-el9", -top/40, -top/40, 0);
+    translate("#decor-el10", 0, -top/100, -top/10);
+
+	})
+
   const sliderOptions = {
     'prizes': {
       cellAlign: 'center',

@@ -3,6 +3,7 @@
   z-index: 3;
   height: 520px;
   margin-top: -110px;
+  overflow: hidden;
 
   &::before {
     position: absolute;
@@ -12,13 +13,28 @@
     content: '';
     background: url('../img/backgrounds/back-footer.svg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left;
     background-size: cover;
   }
 
+  &__text {
+    .positionCenter-Y();
+    margin-top: 40px;
+    left: 8vw;
+    width: 494px;
+    color: @colorTextDark;
+    font-size: 21px;
+
+    p {
+      margin: 0;
+    }
+  }
+
   &__main {
+    position: relative;
+    left: 8.5vw;
     display: flex;
-    width: 976px;
+    width: 756px;
     max-width: 100%;
     padding-top: 184px;
     margin: 0 5% 0 auto;
@@ -28,18 +44,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    &:nth-child(1) {
-      width: 37%;
-    }
-
-    &:nth-child(2) {
-      width: 25%;
-    }
-
-    &:nth-child(3) {
-      width: 38%;
-    }
+    width: 50%;
   }
 
   &__link {

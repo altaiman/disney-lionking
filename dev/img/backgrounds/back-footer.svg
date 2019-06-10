@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1916 517">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1920 517">
   <path fill="url(#paint0_linear)" d="M1920 20L255 114l187 403h1478V20z"/>
-  <path fill="url(#paint1_linear)" fill-rule="evenodd" d="M0 0l428 51 67 466H0V0z" clip-rule="evenodd"/>
+  <path fill="url(#paint1_linear)" fill-rule="evenodd" d="M0 0l679 51 106 466H0V0z" clip-rule="evenodd"/>
   <defs>
     <linearGradient id="paint0_linear" x1="1088" x2="1088" y1="20" y2="517" gradientUnits="userSpaceOnUse">
       <stop stop-color="#E31E24"/>
       <stop offset="1" stop-color="#9D231F"/>
     </linearGradient>
-    <linearGradient id="paint1_linear" x1="248" x2="248" y1="517" gradientUnits="userSpaceOnUse">
+    <linearGradient id="paint1_linear" x1="393" x2="393" y1="517" gradientUnits="userSpaceOnUse">
       <stop stop-color="#F79000"/>
       <stop offset="1" stop-color="#FC0"/>
     </linearGradient>

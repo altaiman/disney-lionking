@@ -24,6 +24,26 @@
       }
     }
   }
+
+  .footer {
+    &::before {
+      background-position-x: -240px;
+    }
+
+    &__text {
+      left: 2vw;
+      font-size: 18px;
+      width: 400px;
+    }
+
+    &__main {
+      left: 12vw;
+    }
+  }
+
+  .social {
+    margin-top: 80px;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -558,6 +578,29 @@
     }
   }
 
+  .footer {
+    height: 320px;
+
+    &::before {
+      background-position: center;
+    }
+
+    &__main {
+      padding-top: 100px;
+      left: 20vw;
+    }
+
+    &__text {
+      width: 360px;
+      margin-top: 30px;
+      font-size: 16px;
+    }
+  }
+
+  .social {
+    margin-top: 0;
+  }
+
 }
 
 @media(max-width: 1000px) {
@@ -829,37 +872,33 @@
   .footer {
     height: 320px;
 
-    &::before {
-      background-position-x: -120px;
+    &__text {
+      left: 38px;
+      width: 311px;
+      font-size: 15px;
+      margin-top: 0;
     }
 
     &__main {
+      width: 400px;
+      left: 100px;
       padding-top: 100px;
-      width: 420px;
-      flex-direction: column;
-      flex-wrap: wrap;
     }
 
     &__link {
-      font-size: 15px;
-      margin: 0 0 20px;
-      width: 50%;
+      margin-bottom: 15px;
     }
 
-    &__block {
-      flex-direction: row;
-
-      &:nth-child(1n) {
-        width: auto;
-        height: 40px;
-      }
+    &::before {
+      background-position-x: -80px;
     }
   }
 
   .social {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     margin-top: 30px;
+    padding-right: 30px;
 
     &__link {
       width: 30px;
@@ -1488,21 +1527,33 @@
   }
 
   .footer {
+    height: auto;
+    padding-bottom: 80px;
+
     &::before {
       background-image: url('../img/backgrounds/back-footer-m.svg');
       background-position: center;
     }
 
+    &__text {
+      position: relative;
+      left: 0;
+      top: 120px;
+      color: @colorTextLight;
+      padding: 0 20px 0 30px;
+      width: 100%;
+      font-size: 13px;
+    }
+
     &__link {
       font-size: 13px;
+    }
 
-      &:nth-child(1) {
-        width: 60%;
-      }
-
-      &:nth-child(2) {
-        width: 40%;
-      }
+    &__main {
+      padding: 100px 0 0 10px;
+      width: 100%;
+      left: 0;
+      font-size: 13px;
     }
   }
 

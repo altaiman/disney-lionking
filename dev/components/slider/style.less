@@ -138,13 +138,19 @@
     &__item {
       width: 290px;
       margin: 0 35px;
+    }
+  }
 
-      &:first-child {
-        margin-left: 0;
-      }
+  &:not(.slider_initial) {
+    .slider {
+      &__item {
+        &:first-child {
+          margin-left: 0;
+        }
 
-      &:last-child {
-        margin-right: 0;
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
   }

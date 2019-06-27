@@ -11,7 +11,7 @@
     &__background_left {
       .section {
         &__background-image {
-          margin-right: 6%;
+          // margin-right: 6%;
         }
       }
     }
@@ -71,7 +71,7 @@
   }
 
   .sweetboxes {
-    bottom: -15%;
+    bottom: 0;
     transform: translateX(-50%) scale(.8);
   }
 
@@ -124,7 +124,8 @@
       .section {
         &__background-image {
           &::before {
-            right: 56.5%;
+            // right: 56.5%;
+            margin-right: -3%;
           }
         }
       }
@@ -210,6 +211,12 @@
     }
   }
 
+  .product {
+    &__caption {
+      height: 36px;
+    }
+  }
+
   .playstation {
     top: -20%;
     margin-left: -35%;
@@ -218,7 +225,7 @@
 
   .sweetboxes {
     margin-left: -28%;
-    bottom: -20%;
+    bottom: -5%;
     transform: translateX(-50%) scale(.562);
   }
 
@@ -357,7 +364,8 @@
       .section {
         &__background-image {
           &::before {
-            right: 62%;
+            // right: 62%;
+            margin-right: 2%;
           }
         }
       }
@@ -399,7 +407,7 @@
     }
 
     &::before {
-      height: 720px;
+      height: 800px;
     }
   }
 
@@ -655,6 +663,12 @@
           margin-right: -14%;
           min-height: 340px;
           height: 42vw;
+
+          &::before {
+            top: 50px;
+            right: 10.5%;
+            transform: rotate(88deg);
+          }
         }
       }
     }
@@ -991,7 +1005,7 @@
   }
 
   .section_welcome {
-    height: 700px;
+    height: 760px;
     overflow: hidden;
     margin-bottom: -120px;
 
@@ -1212,9 +1226,9 @@
           top: 30px;
           right: auto;
           margin: 0;
-          margin-left: 14%;
+          margin-left: 21%;
           left: 50%;
-          transform: rotate(-90deg) translateX(-50%);
+          transform: rotate(-92deg) translateX(-50%);
         }
       }
     }
@@ -1381,7 +1395,7 @@
     &__item {
       width: 220px;
       margin: 50px auto;
-      padding: 0 10%;
+      padding: 0 5%;
     }
   }
 
@@ -1412,7 +1426,6 @@
   }
 
   .faq {
-    width: 100%;
 
     &__caption {
       font-size: 15px;
@@ -1581,10 +1594,10 @@
 
 @media (max-width: 400px) {
   .section_welcome {
-    height: 1080px;
+    height: 1300px;
 
     &::before {
-      height: 1080px;
+      height: 1300px;
       background: url('../img/backgrounds/background-1-m.svg');
       background-position: bottom;
       background-repeat: no-repeat;

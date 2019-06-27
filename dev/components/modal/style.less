@@ -59,12 +59,22 @@
 
   .field {
     border-color: #6F6F6F;
+
+    &__input {
+      input,
+      textarea {
+        &:hover,
+        &:focus {
+          color: @colorRed;
+        }
+      }
+    }
   }
 }
 
 .modal_thanks {
-  background: url('../img/backgrounds/thanks.png') no-repeat center !important;
-  background-size: cover;
+  background: url('../img/backgrounds/thanks.jpg') no-repeat center !important;
+  background-size: cover !important;
 
   .modal {
     &__content {
